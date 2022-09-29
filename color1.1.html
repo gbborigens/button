@@ -1,0 +1,99 @@
+<html><head>
+    <input type="button" id="teste" onclick="amarelo()"></input>
+    <input type="button" id="teste2" onclick="vermelho()"></input>
+    <input type="button" id="teste3" onclick="azul()"></input>
+    <input type="button" id="teste4" onclick="verde()"></input>
+    </head>
+    <body>
+        <h1 id="yellow">yellow</h1>
+        <h1 id="red">red</h1>
+        <h1 id="blue">blue</h1>
+        <h1 id="green">green</h1>
+        <style>
+    #yellow{font: normal 20px arial;
+     height: 2px;
+     padding:5px;
+     margin: -6px;
+     color:yellow;
+    }
+    #red{font: normal 20px arial;
+     height: 5px;
+     margin: -6;
+    text-indent: 120px;
+    color:red;
+    }
+    #blue{font: normal 20px arial;
+    height: 5px;
+     margin: -6px;
+     text-indent: 220px;
+     color: blue;
+    }
+    #green{font: normal 20px arial;
+    height:3px;
+    margin: -6px;
+     text-indent: 320px;
+     color:green;
+    }
+    input#teste{
+    width: 100px;
+    height: 100px;
+    background:yellow;
+    border-color: yellow;
+    }
+    input#teste2{width: 100px;
+        height: 100px;
+        background:red;
+        border-color: red;
+        }
+        input#teste3{width: 100px;
+            height: 100px;
+            background:blue;
+            border-color: blue;
+            box-shadow: inset -0,5px -0,5px 0px ;
+            }
+             input#teste4{
+                width: 100px;
+                height: 100px;
+                background:green;
+                border-color: green;
+                box-shadow: inset -0,5px -0,5px 0px ;
+                }
+    
+     </style>
+     <script>
+        var yel = document.getElementById("yellow")
+        var red = document.getElementById("red")
+        var blu = document.getElementById("blue")
+        var gre = document.getElementById("green")
+        var a =  document.getElementById("teste")
+        addEventListener('onclick',amarelo)
+        function amarelo(){
+        a.style.background = 'red'
+        a.style.border = 'red'
+        yel.innerHTML = 'red'
+        yel.style.color = 'red' }
+        var b = document.getElementById("teste2")
+        addEventListener('onclick',vermelho)
+        function vermelho(){
+        b.style.background = 'blue'
+        b.style.border = 'blue'
+        red.innerHTML = 'blue'
+        red.style.color = 'blue' }
+        var c = document.getElementById("teste3")
+        addEventListener('onclick',azul)
+        function azul(){
+        c.style.background = 'green'
+        c.style.border = 'green'
+        blu.innerHTML = 'green'
+        blu.style.color = 'green'}
+        var d = document.getElementById("teste4")
+        addEventListener('onclick',verde)
+        function verde(){
+        d.style.background = 'yellow'
+        d.style.border = 'yellow'
+        gre.innerHTML = 'yellow'
+        gre.style.color = 'yellow'}
+     </script>
+    </body>
+    
+    </html>
