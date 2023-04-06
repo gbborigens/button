@@ -3,6 +3,9 @@
     <input type="button" id="teste2" onclick="vermelho()"></input>
     <input type="button" id="teste3" onclick="azul()"></input>
     <input type="button" id="teste4" onclick="verde()"></input>
+    <input type="button" id="result" 
+onclick="res()" value="resultado S"></input>
+    <input type="button" id='result2' onclick="res2()" value="resultado N"></input>
 </div>
     </head>
     <body><div>
@@ -104,6 +107,19 @@
                 box-shadow: inset -0,5px -0,5px 0px ;
                 transition: 2s;
                 }
+     input#result{
+     width: 10px;
+     height: 10px;
+     background:white;
+     border-color:white;
+     box-shadow: inset 0,5
+}    input#result2{
+     width: 10px;
+     height: 10px;
+     background:white;
+     border-color:white;
+     box-shadow: inset 0,5
+}
     
      </style>
      <script>
@@ -116,7 +132,11 @@
         var c = document.getElementById("teste3")
         var d = document.getElementById("teste4")
         var ress = document.getElementById("ress")
-        var ressd = document.getElementById('ressd')
+        var ressd = document.getElementById('ressd') 
+        var result =
+document.getElementById('result')
+        var result2 = 
+document.getElementById('result2')
         var resd = 0
         var res = 0;
         var yell = 0;
@@ -239,7 +259,11 @@
     green0.innerHTML = countg;
     ress.innerHTML = res
     ressd.innerHTML = resd
-     } 
+     } function res(){
+county.innerHTML + countr.innerHTML + countb.innerHTML + countg.innerHTML = result
+} function res2(){
+county.innerHTML - countr.innerHTML - countb.innerHTML - countg.innerHTML = result2
+}
      </script>
     </body>
        </html>
