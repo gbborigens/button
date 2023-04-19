@@ -1,15 +1,15 @@
 <html><head><div>
     <h1>ARITHMETICS COLORS</h1>
-    <input type="button" id="teste" onclick="amarelo()"></input>
-    <input type="button" id="teste2" onclick="vermelho()"></input>
-    <input type="button" id="teste3" onclick="azul()"></input>
-    <input type="button" id="teste4" onclick="verde()"></input>
-    <input type="button" id="result"  onclick="rest()" value="resultado soma"></input>
-    <input type="button" id='result2' onclick="rest2()" value="resultado subtração"></input>
-    <input type="button" id='result3' onclick="rest3()" value="resultado multiplicação"></input>
-    <input type="button" id='result4' onclick="rest4()" value="resultado divisão"></input>
-    <input type="button" id='result5' onclick="rest5()" value="resultado módulo"></input>
-    <input type="button" id='result6' onclick="rest6()" value="resultado potenciação"></input>
+    <input type="button" id="test" onclick="yellow()"></input>
+    <input type="button" id="test2" onclick="red()"></input>
+    <input type="button" id="test3" onclick="blue()"></input>
+    <input type="button" id="test4" onclick="green()"></input>
+    <input type="button" id="result"  onclick="rest()" value="result sum"></input>
+    <input type="button" id='result2' onclick="rest2()" value="result subtraction"></input>
+    <input type="button" id='result3' onclick="rest3()" value="result multiplication"></input>
+    <input type="button" id='result4' onclick="rest4()" value="result division"></input>
+    <input type="button" id='result5' onclick="rest5()" value="result module"></input>
+    <input type="button" id='result6' onclick="rest6()" value="result potentiation"></input>
 </div>
 <div>
     </head>
@@ -69,28 +69,28 @@
      margin: 90px;
      background-color:orange;
      height: 1px;}
-    input#teste{
+    input#test{
     width: 100px;
     height: 100px;
     background:yellow;
     border-color: yellow;
     transition: 3s;
     }
-    input#teste2{
+    input#test2{
     width: 100px;
     height: 100px;
     background:red;
     border-color: red;
     transition: 2s;
         }
-    input#teste3{width: 100px;
+    input#test3{width: 100px;
             height: 100px;
             background:blue;
             border-color: blue;
             box-shadow: inset -0,5px -0,5px 0px ;
             transition: 2s;
             }
-    input#teste4{
+    input#test4{
                 width: 100px;
                 height: 100px;
                 background:green;
@@ -141,10 +141,10 @@
         var red = document.getElementById("red")
         var blu = document.getElementById("blue")
         var gre = document.getElementById("green")
-        var a = document.getElementById("teste")
-        var b = document.getElementById("teste2")
-        var c = document.getElementById("teste3")
-        var d = document.getElementById("teste4") 
+        var a = document.getElementById("test")
+        var b = document.getElementById("test2")
+        var c = document.getElementById("test3")
+        var d = document.getElementById("test4") 
         var result = document.getElementById('result')
         var result2 = document.getElementById('result2')
         var result3 = document.getElementById('result3')
@@ -159,7 +159,7 @@
         var countr = 0;
         var countb = 0;
         var countg = 0;
-        function amarelo(){
+        function yellow(){
         yell++;
 	    if(yell == 1){
         a.style.background = 'red';
@@ -183,7 +183,7 @@
         yel.style.color = 'yellow';} 
         county++;
     yellow0.innerHTML = county;}
-        function vermelho(){ 
+        function red(){ 
         redd++;
 	    if(redd == 1){
         b.style.background = 'blue';
@@ -207,7 +207,7 @@
         red.style.color = 'red';}
         countr++;
     red0.innerHTML = countr;}
-        function azul(){
+        function blue(){
         bluu++ 
 	    if(bluu == 1){
         c.style.background = 'green';
@@ -231,7 +231,7 @@
         blue.style.color = 'blue';}
         countb++;
     blue0.innerHTML = countb;}
-        function verde(){
+        function green(){
         gree++ 
 	    if(gree == 1){
         d.style.background = 'yellow';
