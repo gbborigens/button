@@ -36,17 +36,19 @@ case 1 :
     a.style.background = 'red';
     a.style.border = 'red';
     a.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
-    a.style.transition = '2s'
+    a.style.transition = '2s';
+    a.style.borderRadius = '20%';
     yel.innerHTML = 'Red⠀⠀⠀⠀⠀';
     yel.style.color = 'red';
     yel.style.transition = '2s'
     yellow0.style.color = 'red';
-    yellow0.style.transition = '2s'
+    yellow0.style.transition = '2s';
     break;
 case 2: 
     a.style.background = 'blue';
     a.style.border = 'blue';
     a.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
+    a.style.borderRadius = '40%';
     yel.innerHTML = 'Blue⠀⠀⠀⠀⠀';
     yel.style.color = 'blue';
     yellow0.style.color = 'blue';
@@ -55,6 +57,7 @@ case 3:
     a.style.background = 'green';
     a.style.border = 'green';
     a.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
+    a.style.borderRadius = '80%';
     yel.innerHTML = 'Green⠀⠀⠀';
     yel.style.color = 'green';
     yellow0.style.color = 'green';
@@ -63,6 +66,7 @@ case 4:
     a.style.background = 'yellow';
     a.style.border = 'yellow';
     a.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
+    a.style.borderRadius = '10%';
     yel.innerHTML = 'Yellow⠀⠀⠀';
     yel.style.color = 'yellow';
     yellow0.style.color = 'yellow';
@@ -78,9 +82,10 @@ switch(redd){
 case 1 :  
     b.style.background = 'blue';
     b.style.border = 'blue';
-    rad.innerHTML = 'Blue⠀⠀⠀⠀⠀';
     b.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
     b.style.transition = '2s';
+    b.style.borderRadius = '40%';
+    rad.innerHTML = 'Blue⠀⠀⠀⠀⠀';
     rad.style.color = 'blue';
     rad.style.transition = '2s';
     red0.style.color = 'blue';
@@ -89,24 +94,27 @@ case 1 :
 case 2 :
     b.style.background = 'green';
     b.style.border = 'green';
-    rad.innerHTML = 'Green⠀⠀⠀';
     b.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
+    b.style.borderRadius = '80%';
+    rad.innerHTML = 'Green⠀⠀⠀';
     rad.style.color = 'green';
     red0.style.color = 'green'; 
     break;
 case 3 :
     b.style.background = 'yellow';
     b.style.border = 'yellow';
-    rad.innerHTML = 'Yellow⠀⠀⠀';
     b.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
+    b.style.borderRadius = '10%';
+    rad.innerHTML = 'Yellow⠀⠀⠀';
     rad.style.color = 'yellow';
     red0.style.color = 'yellow';
     break;
 case 4 :
     b.style.background = 'red';
     b.style.border = 'red';
-    rad.innerHTML = 'Red⠀⠀⠀⠀⠀';
     b.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
+    b.style.borderRadius = '20%';
+    rad.innerHTML = 'Red⠀⠀⠀⠀⠀';
     rad.style.color = 'red';
     red0.style.color = 'red';
     break;}
@@ -120,9 +128,10 @@ switch (bluu){
 case 1: 
     c.style.background = 'green';
     c.style.border = 'green';
-    blu.innerHTML = 'Green⠀⠀⠀';
     c.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
     c.style.transition = '2s';
+    c.style.borderRadius = '80%';
+    blu.innerHTML = 'Green⠀⠀⠀';
     blu.style.color = 'green';
     blu.style.transition = '2s';
     blue0.style.color = 'green';
@@ -131,24 +140,27 @@ case 1:
 case 2:
     c.style.background = 'yellow';
     c.style.border = 'yellow';
-    blu.innerHTML = 'Yellow⠀⠀⠀';
     c.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
+    c.style.borderRadius = '10%';
+    blu.innerHTML = 'Yellow⠀⠀⠀';
     blu.style.color = 'yellow';
     blue0.style.color = 'yellow';
     break;
 case 3:
     c.style.background = 'red';
     c.style.border = 'red';
-    blu.innerHTML = 'Red⠀⠀⠀⠀⠀';
     c.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
+    c.style.borderRadius = '20%';
+    blu.innerHTML = 'Red⠀⠀⠀⠀⠀';
     blu.style.color = 'red';
     blue0.style.color = 'red';
     break;
 case 4:
     c.style.background = 'blue';
     c.style.border = 'blue';
-    blu.innerHTML = 'Blue⠀⠀⠀⠀⠀';
     c.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
+    c.style.borderRadius = '40%';
+    blu.innerHTML = 'Blue⠀⠀⠀⠀⠀';
     blu.style.color = 'blue';
     blue0.style.color = 'blue';
     break;}
@@ -162,9 +174,10 @@ switch(gree){
 case 1: 
     d.style.background = 'yellow';
     d.style.border = 'yellow';
-    gre.innerHTML = 'Yellow⠀⠀⠀';
     d.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
     d.style.transition = '2s';
+    d.style.borderRadius = '10%';
+    gre.innerHTML = 'Yellow⠀⠀⠀';
     gre.style.color = 'yellow';
     gre.style.transition = '2s';
     green0.style.color = 'yellow';
@@ -173,24 +186,27 @@ case 1:
 case 2:
     d.style.background = 'red';
     d.style.border = 'red';
-    gre.innerHTML = 'Red⠀⠀⠀⠀⠀';
     d.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
+    d.style.borderRadius = '20%';
+    gre.innerHTML = 'Red⠀⠀⠀⠀⠀';
     gre.style.color = 'red';
     green0.style.color = 'red';
     break;
 case 3:
     d.style.background = 'blue';
     d.style.border = 'blue';
-    gre.innerHTML = 'Blue⠀⠀⠀⠀⠀';
     d.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
+    d.style.borderRadius = '40%';
+    gre.innerHTML = 'Blue⠀⠀⠀⠀⠀';
     gre.style.color = 'blue';
     green0.style.color = 'blue';
     break;
 case 4:
     d.style.background = 'green';
     d.style.border = 'green';
-    gre.innerHTML = 'Green⠀⠀⠀';
     d.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
+    d.style.borderRadius = '80%';
+    gre.innerHTML = 'Green⠀⠀⠀';
     gre.style.color = 'green';
     green0.style.color = 'green';
     break;}
@@ -211,8 +227,33 @@ result6.value = Number(county**countr**countb**countg)}
 function img() {if(back == 0){
 document.body.style.background = 'white';
 hps.style.color = 'black';
+hps.style.transition = '2s';
 imgy.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg')
 back++
+    result.style.backgroundColor= 'white';
+    result.style.color= "black";
+    result.style.borderColor='black';
+    result.style.transition = '2s';
+    result2.style.backgroundColor= 'white';
+    result2.style.color= "black";
+    result2.style.borderColor='black';
+    result2.style.transition = '2s';
+    result3.style.backgroundColor= 'white';
+    result3.style.color= "black";
+    result3.style.borderColor='black';
+    result3.style.transition = '2s';
+    result4.style.backgroundColor= 'white';
+    result4.style.color= "black";
+    result4.style.borderColor='black';
+    result4.style.transition = '2s';
+    result5.style.backgroundColor= 'white';
+    result5.style.color= "black";
+    result5.style.borderColor='black';
+    result5.style.transition = '2s';
+    result6.style.backgroundColor= 'white';
+    result6.style.color= "black";
+    result6.style.borderColor='black';
+    result6.style.transition = '2s';
 switch(yell){
 case 0:
     yel.style.color = 'orange';
@@ -277,11 +318,6 @@ switch(redd){
         b.style.border = 'brown';
         break;
 }
-if(bluu == 2){
-blu.style.color = 'orange';
-blue0.style.color = 'orange';
-c.style.background = 'orange';
-c.style.border = 'orange';}
 switch(bluu){
     case 0:
         blu.style.color = 'purple';
@@ -351,12 +387,31 @@ document.body.style.background = 'black';
 hps.style.color = 'rgb(219, 219, 219)';
 imgy.setAttribute('src','https://i.pinimg.com/originals/cc/65/09/cc6509211d4eea95619a31b1c290c417.jpg')
 back-- 
+    result.style.backgroundColor= 'black';
+    result.style.color= "white";
+    result.style.borderColor='white';
+    result2.style.backgroundColor= 'black';
+    result2.style.color= "white";
+    result2.style.borderColor='white';
+    result3.style.backgroundColor= 'black';
+    result3.style.color= "white";
+    result3.style.borderColor='white';
+    result4.style.backgroundColor= 'black';
+    result4.style.color= "white";
+    result4.style.borderColor='white';
+    result5.style.backgroundColor= 'black';
+    result5.style.color= "white";
+    result5.style.borderColor='white';
+    result6.style.backgroundColor= 'black';
+    result6.style.color= "white";
+    result6.style.borderColor='white';
 switch(yell){
     case 0: 
         yel.style.color = 'yellow';
         yellow0.style.color = 'yellow';
         a.style.background = 'yellow';
         a.style.border = 'yellow';
+        break;
     case 1 : 
         a.style.background = 'red';
         a.style.border = 'red';
@@ -393,12 +448,18 @@ switch(yell){
         yellow0.style.color = 'yellow';
         break;}
 switch(redd){
+    case 0: 
+        rad.style.color = 'red';
+        red0.style.color = 'red';
+        b.style.background = 'red';
+        b.style.border = 'red';
+        break;
     case 1 :  
         b.style.background = 'blue';
         b.style.border = 'blue';
-        rad.innerHTML = 'Blue⠀⠀⠀⠀⠀';
         b.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
         b.style.transition = '2s';
+        rad.innerHTML = 'Blue⠀⠀⠀⠀⠀';
         rad.style.color = 'blue';
         rad.style.transition = '2s';
         red0.style.color = 'blue';
@@ -407,70 +468,81 @@ switch(redd){
     case 2 :
         b.style.background = 'green';
         b.style.border = 'green';
-        rad.innerHTML = 'Green⠀⠀⠀';
         b.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
+        rad.innerHTML = 'Green⠀⠀⠀';
         rad.style.color = 'green';
         red0.style.color = 'green'; 
         break;
     case 3 :
         b.style.background = 'yellow';
         b.style.border = 'yellow';
-        rad.innerHTML = 'Yellow⠀⠀⠀';
         b.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
+        rad.innerHTML = 'Yellow⠀⠀⠀';
         rad.style.color = 'yellow';
         red0.style.color = 'yellow';
         break;
     case 4 :
         b.style.background = 'red';
         b.style.border = 'red';
-        rad.innerHTML = 'Red⠀⠀⠀⠀⠀';
         b.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
+        rad.innerHTML = 'Red⠀⠀⠀⠀⠀';
         rad.style.color = 'red';
         red0.style.color = 'red';
         break;}
 switch (bluu){
+    case 0: 
+        blu.style.color = 'blue';
+        blue0.style.color = 'blue';
+        c.style.background = 'blue';
+        c.style.border = 'blue';
+    break;
     case 1: 
         c.style.background = 'green';
         c.style.border = 'green';
-        blu.innerHTML = 'Green⠀⠀⠀';
         c.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
         c.style.transition = '2s';
+        blu.innerHTML = 'Green⠀⠀⠀';
         blu.style.color = 'green';
         blu.style.transition = '2s';
         blue0.style.color = 'green';
-        blue0.style.transition = '2s';
         break;
     case 2:
         c.style.background = 'yellow';
         c.style.border = 'yellow';
-        blu.innerHTML = 'Yellow⠀⠀⠀';
         c.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
+        blu.innerHTML = 'Yellow⠀⠀⠀';
         blu.style.color = 'yellow';
         blue0.style.color = 'yellow';
         break;
     case 3:
         c.style.background = 'red';
         c.style.border = 'red';
-        blu.innerHTML = 'Red⠀⠀⠀⠀⠀';
         c.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
+        blu.innerHTML = 'Red⠀⠀⠀⠀⠀';
         blu.style.color = 'red';
         blue0.style.color = 'red';
         break;
     case 4:
         c.style.background = 'blue';
         c.style.border = 'blue';
-        blu.innerHTML = 'Blue⠀⠀⠀⠀⠀';
         c.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
+        blu.innerHTML = 'Blue⠀⠀⠀⠀⠀';
         blu.style.color = 'blue';
         blue0.style.color = 'blue';
         break;}
 switch(gree){
-    case 1: 
+    case 0:
+        gre.style.color = 'green';
+        green0.style.color = 'green';
+        d.style.background = 'green';
+        d.style.border = 'green';
+        break;
+    case 1:
         d.style.background = 'yellow';
         d.style.border = 'yellow';
-        gre.innerHTML = 'Yellow⠀⠀⠀';
         d.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
         d.style.transition = '2s';
+        gre.innerHTML = 'Yellow⠀⠀⠀';
         gre.style.color = 'yellow';
         gre.style.transition = '2s';
         green0.style.color = 'yellow';
@@ -479,24 +551,24 @@ switch(gree){
     case 2:
         d.style.background = 'red';
         d.style.border = 'red';
-        gre.innerHTML = 'Red⠀⠀⠀⠀⠀';
         d.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
+        gre.innerHTML = 'Red⠀⠀⠀⠀⠀';
         gre.style.color = 'red';
         green0.style.color = 'red';
         break;
     case 3:
         d.style.background = 'blue';
         d.style.border = 'blue';
-        gre.innerHTML = 'Blue⠀⠀⠀⠀⠀';
         d.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
+        gre.innerHTML = 'Blue⠀⠀⠀⠀⠀';
         gre.style.color = 'blue';
         green0.style.color = 'blue';
         break;
     case 4:
         d.style.background = 'green';
         d.style.border = 'green';
-        gre.innerHTML = 'Green⠀⠀⠀';
         d.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
+        gre.innerHTML = 'Green⠀⠀⠀';
         gre.style.color = 'green';
         green0.style.color = 'green';
         break;}}}
