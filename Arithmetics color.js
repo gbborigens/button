@@ -1,37 +1,29 @@
-var background = document.body.style.backgroundColor = 'black'
-var yel = document.getElementById("yellow")
-var rad = document.getElementById("red")
-var blu = document.getElementById("blue")
-var gre = document.getElementById("green")
-var yellow0 = document.getElementById('yellow0')
-var red0 = document.getElementById('red0')
-var blue0 = document.getElementById('blue0')
-var green0 = document.getElementById('green0')
-var a = document.getElementById("test")
-var b = document.getElementById("test2")
-var c = document.getElementById("test3")
-var d = document.getElementById("test4") 
-var result = document.getElementById('result')
-var result2 = document.getElementById('result2')
-var result3 = document.getElementById('result3')
-var result4 = document.getElementById('result4')
-var result5 = document.getElementById('result5')
-var result6 = document.getElementById('result6')
-var hps = document.getElementById('h1s')
-var back = 0;
-var yell = 0;
-var redd = 0;
-var bluu = 0;
-var gree = 0;
-var county = 0;
-var countr = 0;
-var countb = 0;
-var countg = 0;
+const yel = document.getElementById("yellow")
+const rad = document.getElementById("red")
+const blu = document.getElementById("blue")
+const gre = document.getElementById("green")
+const yellow0 = document.getElementById('yellow0')
+const red0 = document.getElementById('red0')
+const blue0 = document.getElementById('blue0')
+const green0 = document.getElementById('green0')
+const a = document.getElementById("test")
+const b = document.getElementById("test2")
+const c = document.getElementById("test3")
+const d = document.getElementById("test4") 
+const result = document.getElementById('result')
+const result2 = document.getElementById('result2')
+const result3 = document.getElementById('result3')
+const result4 = document.getElementById('result4')
+const result5 = document.getElementById('result5')
+const result6 = document.getElementById('result6')
+const hps = document.getElementById('h1s')
+const imgy = document.getElementById('imgy')
+var color =[0,0,0,0,0,0,0,0,0];
 function yellow(){
-if(yell < 4){
-    yell++} else{
-    yell= yell-3}
-switch(yell){
+if(color[0] < 4)
+{ color[0]++} else
+{color[0]= color[0]-3}
+switch(color[0]){
 case 1 : 
     a.style.background = 'red';
     a.style.border = 'red';
@@ -72,13 +64,13 @@ case 4:
     yellow0.style.color = 'yellow';
     break;
     }
-county++;
-yellow0.innerHTML = county;}
+color[4]++;
+yellow0.innerHTML = color[4];}
 function red(){ 
-if(redd < 4){
-    redd++;} else{
-    redd= redd-3}
-switch(redd){
+if(color[1] < 4){
+    color[1]++;} else{
+    color[1]= color[1]-3}
+switch(color[1]){
 case 1 :  
     b.style.background = 'blue';
     b.style.border = 'blue';
@@ -118,13 +110,13 @@ case 4 :
     rad.style.color = 'red';
     red0.style.color = 'red';
     break;}
-countr++;
-red0.innerHTML = countr;}
+color[5]++;
+red0.innerHTML = color[5];}
 function blue(){
-if(bluu < 4){
-    bluu++;} else{
-    bluu= bluu-3}
-switch (bluu){
+if(color[2] < 4){
+    color[2]++;} else{
+    color[2]= color[2]-3}
+switch (color[2]){
 case 1: 
     c.style.background = 'green';
     c.style.border = 'green';
@@ -164,13 +156,13 @@ case 4:
     blu.style.color = 'blue';
     blue0.style.color = 'blue';
     break;}
-countb++;
-blue0.innerHTML = countb;}
+color[6]++;
+blue0.innerHTML = color[6];}
 function green(){
-if(gree < 4){
-    gree++;} else{
-    gree= gree-3}
-switch(gree){
+if(color[3] < 4){
+    color[3]++;} else{
+    color[3]= color[3]-3}
+switch(color[3]){
 case 1: 
     d.style.background = 'yellow';
     d.style.border = 'yellow';
@@ -210,26 +202,26 @@ case 4:
     gre.style.color = 'green';
     green0.style.color = 'green';
     break;}
-countg++;
-green0.innerHTML = countg;}
+color[7]++;
+green0.innerHTML = color[7];}
 function rest(){
-result.value= Number(county+countr+countb+countg)}
+result.value= Number(color[4]+color[5]+color[6]+color[7])}
 function rest2(){
-result2.value= Number(-county-countr-countb-countg)}
+result2.value= Number(-color[4]-color[5]-color[6]-color[7])}
 function rest3(){
-result3.value= Number(county*countr*countb*countg)}
+result3.value= Number(color[4]*color[5]*color[6]*color[7])}
 function rest4(){
-result4.value= Number(county/countr/countb/countg)}
+result4.value= Number(color[4]/color[5]/color[6]/color[7])}
 function rest5(){
-result5.value = Number(county%countr%countb%countg)}
+result5.value = Number(color[4]%color[5]%color[6]%color[7])}
 function rest6(){
-result6.value = Number(county**countr**countb**countg)}
-function img() {if(back == 0){
+result6.value = Number(color[4]**color[5]**color[6]**color[7])}
+function img() {if(color[8] == 0){
 document.body.style.background = 'white';
 hps.style.color = 'black';
 hps.style.transition = '2s';
 imgy.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg')
-back++
+color[8]++
     result.style.backgroundColor= 'white';
     result.style.color= "black";
     result.style.borderColor='black';
@@ -254,7 +246,7 @@ back++
     result6.style.color= "black";
     result6.style.borderColor='black';
     result6.style.transition = '2s';
-switch(yell){
+switch(color[0]){
 case 0:
     yel.style.color = 'orange';
     yellow0.style.color = 'orange';
@@ -286,7 +278,7 @@ case 4:
     a.style.border = 'orange';
     break;
 }
-switch(redd){
+switch(color[1]){
     case 0:
         rad.style.color = 'brown';
         red0.style.color = 'brown';
@@ -318,7 +310,7 @@ switch(redd){
         b.style.border = 'brown';
         break;
 }
-switch(bluu){
+switch(color[2]){
     case 0:
         blu.style.color = 'purple';
         blue0.style.color = 'purple';
@@ -350,7 +342,7 @@ switch(bluu){
         c.style.border = 'purple';
         break;
 }
-switch(gree){
+switch(color[3]){
     case 0:
         gre.style.color = 'salmon';
         green0.style.color = 'salmon';
@@ -382,11 +374,11 @@ switch(gree){
         d.style.border = 'salmon';
         break;
 }
-} else if(back == 1){
+} else if(color[8] == 1){
 document.body.style.background = 'black';
 hps.style.color = 'rgb(219, 219, 219)';
 imgy.setAttribute('src','https://i.pinimg.com/originals/cc/65/09/cc6509211d4eea95619a31b1c290c417.jpg')
-back-- 
+color[8]-- 
     result.style.backgroundColor= 'black';
     result.style.color= "white";
     result.style.borderColor='white';
@@ -405,7 +397,7 @@ back--
     result6.style.backgroundColor= 'black';
     result6.style.color= "white";
     result6.style.borderColor='white';
-switch(yell){
+switch(color[0]){
     case 0: 
         yel.style.color = 'yellow';
         yellow0.style.color = 'yellow';
@@ -447,7 +439,7 @@ switch(yell){
         yel.style.color = 'yellow';
         yellow0.style.color = 'yellow';
         break;}
-switch(redd){
+switch(color[1]){
     case 0: 
         rad.style.color = 'red';
         red0.style.color = 'red';
@@ -489,7 +481,7 @@ switch(redd){
         rad.style.color = 'red';
         red0.style.color = 'red';
         break;}
-switch (bluu){
+switch (color[2]){
     case 0: 
         blu.style.color = 'blue';
         blue0.style.color = 'blue';
@@ -530,7 +522,7 @@ switch (bluu){
         blu.style.color = 'blue';
         blue0.style.color = 'blue';
         break;}
-switch(gree){
+switch(color[3]){
     case 0:
         gre.style.color = 'green';
         green0.style.color = 'green';
