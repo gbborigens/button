@@ -1,23 +1,23 @@
-const yel = document.getElementById("yellow")
-const rad = document.getElementById("red")
-const blu = document.getElementById("blue")
-const gre = document.getElementById("green")
-const yellow0 = document.getElementById('yellow0')
-const red0 = document.getElementById('red0')
-const blue0 = document.getElementById('blue0')
-const green0 = document.getElementById('green0')
-const a = document.getElementById("test")
-const b = document.getElementById("test2")
-const c = document.getElementById("test3")
-const d = document.getElementById("test4") 
-const result = document.getElementById('result')
-const result2 = document.getElementById('result2')
-const result3 = document.getElementById('result3')
-const result4 = document.getElementById('result4')
-const result5 = document.getElementById('result5')
-const result6 = document.getElementById('result6')
-const hps = document.getElementById('h1s')
-const imgy = document.getElementById('imgy')
+const yel = document.querySelector(".yellow")
+const rad = document.querySelector(".red")
+const blu = document.querySelector(".blue")
+const gre = document.querySelector(".green")
+const yellow0 = document.querySelector('.yellow0')
+const red0 = document.querySelector('.red0')
+const blue0 = document.querySelector('.blue0')
+const green0 = document.querySelector('.green0')
+const a = document.querySelector(".test")
+const b = document.querySelector(".test2")
+const c = document.querySelector(".test3")
+const d = document.querySelector(".test4")
+const result = document.querySelector('.result')
+const result2 = document.querySelector('.result2')
+const result3 = document.querySelector('.result3')
+const result4 = document.querySelector('.result4')
+const result5 = document.querySelector('.result5')
+const result6 = document.querySelector('.result6')
+const hps = document.querySelector('.h1c')
+const imgs = document.querySelector('.imgs')
 var color =[0,0,0,0,0,0,0,0,0];
 function yellow(){
 if(color[0] < 4)
@@ -220,7 +220,7 @@ function img() {if(color[8] == 0){
 document.body.style.background = 'white';
 hps.style.color = 'black';
 hps.style.transition = '2s';
-imgy.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg')
+imgs.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg')
 color[8]++
     result.style.backgroundColor= 'white';
     result.style.color= "black";
@@ -377,7 +377,7 @@ switch(color[3]){
 } else if(color[8] == 1){
 document.body.style.background = 'black';
 hps.style.color = 'rgb(219, 219, 219)';
-imgy.setAttribute('src','https://i.pinimg.com/originals/cc/65/09/cc6509211d4eea95619a31b1c290c417.jpg')
+imgs.setAttribute('src','https://i.pinimg.com/originals/cc/65/09/cc6509211d4eea95619a31b1c290c417.jpg')
 color[8]-- 
     result.style.backgroundColor= 'black';
     result.style.color= "white";

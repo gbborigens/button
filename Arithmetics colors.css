@@ -1,47 +1,58 @@
-p1#yellow{
+.bodys{
+     background-color:black;
+     /*the color of the background*/
+}
+.h1c{
+     color: rgb(219, 219, 219);
+     /*the color of the word in upper left corner*/
+}
+.imgs{
+     top:10px;
+}
+.yellow{
      font:normal 20px arial;
      color:yellow;
      position:relative;
      top:-60px}
- p2#yellow0{
+ .yellow0{
      font: normal 20px arial;
       color:yellow;
       height: 1px;
       position:relative;
       top:-60px}
- p1#red{font: normal 20px arial;
+ .red{font: normal 20px arial;
      color:red;
      height: 1px;
      position:relative;
      top:-60px}
- p2#red0{font: normal 20px arial;
+ .red0{font: normal 20px arial;
      color:red;
      margin: 90px;
      height: 1px;
      position:relative;
      top:-60px}
- p1#blue{font: normal 20px arial;
+ .blue{font: normal 20px arial;
       color: blue;
       height: 1px;
       position:relative;
       top:-60px}
- p2#blue0{font: normal 20px arial;
+ .blue0{font: normal 20px arial;
       color: blue;
       height: 1px;
       position:relative;
       top:-60px}
- p1#green{font: normal 20px arial;
+ .green{font: normal 20px arial;
       color:green;
       height: 1px;
       position:relative;
       top:-60px}
- p2#green0{font: normal 20px arial;
+ .green0{font: normal 20px arial;
       color:green;
       margin: 90px;
       height: 1px;
       position:relative;
       top:-60px}
- input#test{
+ .test{
          width: 100px;
          height: 100px;
          background:yellow;
@@ -50,7 +61,7 @@ p1#yellow{
          transition: 3s;
          position:relative;
          border-radius: 10%;}
- input#test2{
+ .test2{
          width: 100px;
          height: 100px;
          background:red;
@@ -59,7 +70,7 @@ p1#yellow{
          transition: 2s;
          position:relative;
          border-radius: 20%;}
- input#test3{width: 100px;
+ .test3{width: 100px;
          height: 100px;
          background:blue;
          border-color: blue;
@@ -67,7 +78,7 @@ p1#yellow{
          transition: 2s;
          position:relative;
          border-radius: 40%;}
- input#test4{
+ .test4{
          width: 100px;
          height: 100px;
          background:green;
@@ -76,7 +87,7 @@ p1#yellow{
          transition: 2s;
          position:relative;
          border-radius: 80%;}
- input#result{
+ .result{
       width: 150px;
       height: 150px;
       background:black;
@@ -86,7 +97,7 @@ p1#yellow{
       position:relative;
       top:-20px;
       border-radius:100px;}    
- input#result2{
+ .result2{
       width: 150px;
       height: 150px;
       background:rgb(0, 0, 0);
@@ -96,7 +107,7 @@ p1#yellow{
       position:relative;
       top:-20px;
       border-radius:100px;}    
- input#result3{
+ .result3{
       width: 150px;
       height: 150px;
       background:black;
@@ -106,7 +117,7 @@ p1#yellow{
       position:relative;
       top:-20px;
       border-radius:100px;}
- input#result4{
+ .result4{
       width: 150px;
       height: 150px;
       background:black;
@@ -116,7 +127,7 @@ p1#yellow{
       position:relative;
       top:-20px;
       border-radius:100px;}
- input#result5{
+ .result5{
       width: 150px;
       height: 150px;
       background:black;
@@ -126,7 +137,7 @@ p1#yellow{
       position:relative;
       top:-20px;
       border-radius:100px;}
- input#result6{
+ .result6{
       width: 150px;
       height: 150px;
       background:rgb(0, 0, 0);
@@ -136,7 +147,7 @@ p1#yellow{
       position:relative;
       top:-20px;
       border-radius:100px;}
-     img#imgy{
+     .imgs{
      width: 50px;
      height: 50px;
      position:relative;
