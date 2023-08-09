@@ -10,14 +10,16 @@ const a = document.querySelector(".test")
 const b = document.querySelector(".test2")
 const c = document.querySelector(".test3")
 const d = document.querySelector(".test4")
-const result = document.querySelector('.result')
-const result2 = document.querySelector('.result2')
-const result3 = document.querySelector('.result3')
-const result4 = document.querySelector('.result4')
-const result5 = document.querySelector('.result5')
-const result6 = document.querySelector('.result6')
 const hps = document.querySelector('.h1c')
 const imgs = document.querySelector('.imgs')
+const product = document.querySelector('.product')
+const results1 = document.querySelector('.results1')
+const results2 = document.querySelector('.results2')
+const results3 = document.querySelector('.results3')
+const results4 = document.querySelector('.results4')
+const results5 = document.querySelector('.results5')
+const results6 = document.querySelector('.results6')
+const resulted = document.querySelector('.resulted')
 var color =[0,0,0,0,0,0,0,0,0];
 function yellow(){
 if(color[0] < 4)
@@ -30,7 +32,7 @@ case 1 :
     a.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
     a.style.transition = '2s';
     a.style.borderRadius = '20%';
-    yel.innerHTML = 'Red⠀⠀⠀⠀⠀';
+    yel.innerHTML = 'Red';
     yel.style.color = 'red';
     yel.style.transition = '2s'
     yellow0.style.color = 'red';
@@ -41,7 +43,7 @@ case 2:
     a.style.border = 'blue';
     a.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
     a.style.borderRadius = '40%';
-    yel.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+    yel.innerHTML = 'Blue';
     yel.style.color = 'blue';
     yellow0.style.color = 'blue';
     break;
@@ -50,7 +52,7 @@ case 3:
     a.style.border = 'green';
     a.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
     a.style.borderRadius = '80%';
-    yel.innerHTML = 'Green⠀⠀⠀';
+    yel.innerHTML = 'Green';
     yel.style.color = 'green';
     yellow0.style.color = 'green';
     break;  
@@ -59,7 +61,7 @@ case 4:
     a.style.border = 'yellow';
     a.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
     a.style.borderRadius = '10%';
-    yel.innerHTML = 'Yellow⠀⠀⠀';
+    yel.innerHTML = 'Yellow';
     yel.style.color = 'yellow';
     yellow0.style.color = 'yellow';
     break;
@@ -77,7 +79,7 @@ case 1 :
     b.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
     b.style.transition = '2s';
     b.style.borderRadius = '40%';
-    rad.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+    rad.innerHTML = 'Blue';
     rad.style.color = 'blue';
     rad.style.transition = '2s';
     red0.style.color = 'blue';
@@ -88,7 +90,7 @@ case 2 :
     b.style.border = 'green';
     b.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
     b.style.borderRadius = '80%';
-    rad.innerHTML = 'Green⠀⠀⠀';
+    rad.innerHTML = 'Green';
     rad.style.color = 'green';
     red0.style.color = 'green'; 
     break;
@@ -97,7 +99,7 @@ case 3 :
     b.style.border = 'yellow';
     b.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
     b.style.borderRadius = '10%';
-    rad.innerHTML = 'Yellow⠀⠀⠀';
+    rad.innerHTML = 'Yellow';
     rad.style.color = 'yellow';
     red0.style.color = 'yellow';
     break;
@@ -106,7 +108,7 @@ case 4 :
     b.style.border = 'red';
     b.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
     b.style.borderRadius = '20%';
-    rad.innerHTML = 'Red⠀⠀⠀⠀⠀';
+    rad.innerHTML = 'Red';
     rad.style.color = 'red';
     red0.style.color = 'red';
     break;}
@@ -123,7 +125,7 @@ case 1:
     c.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
     c.style.transition = '2s';
     c.style.borderRadius = '80%';
-    blu.innerHTML = 'Green⠀⠀⠀';
+    blu.innerHTML = 'Green';
     blu.style.color = 'green';
     blu.style.transition = '2s';
     blue0.style.color = 'green';
@@ -134,7 +136,7 @@ case 2:
     c.style.border = 'yellow';
     c.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
     c.style.borderRadius = '10%';
-    blu.innerHTML = 'Yellow⠀⠀⠀';
+    blu.innerHTML = 'Yellow';
     blu.style.color = 'yellow';
     blue0.style.color = 'yellow';
     break;
@@ -143,7 +145,7 @@ case 3:
     c.style.border = 'red';
     c.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
     c.style.borderRadius = '20%';
-    blu.innerHTML = 'Red⠀⠀⠀⠀⠀';
+    blu.innerHTML = 'Red';
     blu.style.color = 'red';
     blue0.style.color = 'red';
     break;
@@ -152,7 +154,7 @@ case 4:
     c.style.border = 'blue';
     c.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
     c.style.borderRadius = '40%';
-    blu.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+    blu.innerHTML = 'Blue';
     blu.style.color = 'blue';
     blue0.style.color = 'blue';
     break;}
@@ -169,7 +171,7 @@ case 1:
     d.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
     d.style.transition = '2s';
     d.style.borderRadius = '10%';
-    gre.innerHTML = 'Yellow⠀⠀⠀';
+    gre.innerHTML = 'Yellow';
     gre.style.color = 'yellow';
     gre.style.transition = '2s';
     green0.style.color = 'yellow';
@@ -180,7 +182,7 @@ case 2:
     d.style.border = 'red';
     d.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
     d.style.borderRadius = '20%';
-    gre.innerHTML = 'Red⠀⠀⠀⠀⠀';
+    gre.innerHTML = 'Red';
     gre.style.color = 'red';
     green0.style.color = 'red';
     break;
@@ -189,7 +191,7 @@ case 3:
     d.style.border = 'blue';
     d.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
     d.style.borderRadius = '40%';
-    gre.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+    gre.innerHTML = 'Blue';
     gre.style.color = 'blue';
     green0.style.color = 'blue';
     break;
@@ -198,54 +200,55 @@ case 4:
     d.style.border = 'green';
     d.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
     d.style.borderRadius = '80%';
-    gre.innerHTML = 'Green⠀⠀⠀';
+    gre.innerHTML = 'Green';
     gre.style.color = 'green';
     green0.style.color = 'green';
     break;}
 color[7]++;
 green0.innerHTML = color[7];}
 function rest(){
-result.value= Number(color[4]+color[5]+color[6]+color[7])}
+product.innerHTML= Number(color[4]+color[5]+color[6]+color[7])}
 function rest2(){
-result2.value= Number(-color[4]-color[5]-color[6]-color[7])}
+product.innerHTML= Number(-color[4]-color[5]-color[6]-color[7])}
 function rest3(){
-result3.value= Number(color[4]*color[5]*color[6]*color[7])}
+product.innerHTML= Number(color[4]*color[5]*color[6]*color[7])}
 function rest4(){
-result4.value= Number(color[4]/color[5]/color[6]/color[7])}
+product.innerHTML= Number(color[4]/color[5]/color[6]/color[7])}
 function rest5(){
-result5.value = Number(color[4]%color[5]%color[6]%color[7])}
+product.innerHTML = Number(color[4]%color[5]%color[6]%color[7])}
 function rest6(){
-result6.value = Number(color[4]**color[5]**color[6]**color[7])}
+product.innerHTML = Number(color[4]**color[5]**color[6]**color[7])}
 function img() {if(color[8] == 0){
 document.body.style.background = 'white';
 hps.style.color = 'black';
 hps.style.transition = '2s';
 imgs.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg')
 color[8]++
-    result.style.backgroundColor= 'white';
-    result.style.color= "black";
-    result.style.borderColor='black';
-    result.style.transition = '2s';
-    result2.style.backgroundColor= 'white';
-    result2.style.color= "black";
-    result2.style.borderColor='black';
-    result2.style.transition = '2s';
-    result3.style.backgroundColor= 'white';
-    result3.style.color= "black";
-    result3.style.borderColor='black';
-    result3.style.transition = '2s';
-    result4.style.backgroundColor= 'white';
-    result4.style.color= "black";
-    result4.style.borderColor='black';
-    result4.style.transition = '2s';
-    result5.style.backgroundColor= 'white';
-    result5.style.color= "black";
-    result5.style.borderColor='black';
-    result5.style.transition = '2s';
-    result6.style.backgroundColor= 'white';
-    result6.style.color= "black";
-    result6.style.borderColor='black';
-    result6.style.transition = '2s';
+    resulted.style.color='black'
+    results1.style.backgroundColor= 'white';
+    results1.style.color= "black";
+    results1.style.borderColor='black';
+    results1.style.transition='2s';
+    results2.style.backgroundColor= 'white';
+    results2.style.color= "black";
+    results2.style.borderColor='black';
+    results2.style.transition='2s';
+    results3.style.backgroundColor= 'white';
+    results3.style.color= "black";
+    results3.style.borderColor='black';
+    results3.style.transition='2s';
+    results4.style.backgroundColor= 'white';
+    results4.style.color= "black";
+    results4.style.borderColor='black';
+    results4.style.transition='2s';
+    results5.style.backgroundColor= 'white';
+    results5.style.color= "black";
+    results5.style.borderColor='black';
+    results5.style.transition='2s';
+    results6.style.backgroundColor= 'white';
+    results6.style.color= "black";
+    results6.style.borderColor='black';
+    results6.style.transition='2s';
 switch(color[0]){
 case 0:
     yel.style.color = 'orange';
@@ -379,24 +382,25 @@ document.body.style.background = 'black';
 hps.style.color = 'rgb(219, 219, 219)';
 imgs.setAttribute('src','https://i.pinimg.com/originals/cc/65/09/cc6509211d4eea95619a31b1c290c417.jpg')
 color[8]-- 
-    result.style.backgroundColor= 'black';
-    result.style.color= "white";
-    result.style.borderColor='white';
-    result2.style.backgroundColor= 'black';
-    result2.style.color= "white";
-    result2.style.borderColor='white';
-    result3.style.backgroundColor= 'black';
-    result3.style.color= "white";
-    result3.style.borderColor='white';
-    result4.style.backgroundColor= 'black';
-    result4.style.color= "white";
-    result4.style.borderColor='white';
-    result5.style.backgroundColor= 'black';
-    result5.style.color= "white";
-    result5.style.borderColor='white';
-    result6.style.backgroundColor= 'black';
-    result6.style.color= "white";
-    result6.style.borderColor='white';
+    resulted.style.color='white'
+    results1.style.backgroundColor= 'black';
+    results1.style.color= "white";
+    results1.style.borderColor='white';
+    results2.style.backgroundColor= 'black';
+    results2.style.color= "white";
+    results2.style.borderColor='white';
+    results3.style.backgroundColor= 'black';
+    results3.style.color= "white";
+    results3.style.borderColor='white';
+    results4.style.backgroundColor= 'black';
+    results4.style.color= "white";
+    results4.style.borderColor='white';
+    results5.style.backgroundColor= 'black';
+    results5.style.color= "white";
+    results5.style.borderColor='white';    
+    results6.style.backgroundColor= 'black';
+    results6.style.color= "white";
+    results6.style.borderColor='white';
 switch(color[0]){
     case 0: 
         yel.style.color = 'yellow';
@@ -409,7 +413,7 @@ switch(color[0]){
         a.style.border = 'red';
         a.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
         a.style.transition = '2s'
-        yel.innerHTML = 'Red⠀⠀⠀⠀⠀';
+        yel.innerHTML = 'Red';
         yel.style.color = 'red';
         yel.style.transition = '2s'
         yellow0.style.color = 'red';
@@ -419,7 +423,7 @@ switch(color[0]){
         a.style.background = 'blue';
         a.style.border = 'blue';
         a.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
-        yel.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+        yel.innerHTML = 'Blue';
         yel.style.color = 'blue';
         yellow0.style.color = 'blue';
         break;
@@ -427,7 +431,7 @@ switch(color[0]){
         a.style.background = 'green';
         a.style.border = 'green';
         a.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
-        yel.innerHTML = 'Green⠀⠀⠀';
+        yel.innerHTML = 'Green';
         yel.style.color = 'green';
         yellow0.style.color = 'green';
         break;  
@@ -435,7 +439,7 @@ switch(color[0]){
         a.style.background = 'yellow';
         a.style.border = 'yellow';
         a.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
-        yel.innerHTML = 'Yellow⠀⠀⠀';
+        yel.innerHTML = 'Yellow';
         yel.style.color = 'yellow';
         yellow0.style.color = 'yellow';
         break;}
@@ -451,7 +455,7 @@ switch(color[1]){
         b.style.border = 'blue';
         b.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
         b.style.transition = '2s';
-        rad.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+        rad.innerHTML = 'Blue';
         rad.style.color = 'blue';
         rad.style.transition = '2s';
         red0.style.color = 'blue';
@@ -461,7 +465,7 @@ switch(color[1]){
         b.style.background = 'green';
         b.style.border = 'green';
         b.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
-        rad.innerHTML = 'Green⠀⠀⠀';
+        rad.innerHTML = 'Green';
         rad.style.color = 'green';
         red0.style.color = 'green'; 
         break;
@@ -469,7 +473,7 @@ switch(color[1]){
         b.style.background = 'yellow';
         b.style.border = 'yellow';
         b.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
-        rad.innerHTML = 'Yellow⠀⠀⠀';
+        rad.innerHTML = 'Yellow';
         rad.style.color = 'yellow';
         red0.style.color = 'yellow';
         break;
@@ -477,7 +481,7 @@ switch(color[1]){
         b.style.background = 'red';
         b.style.border = 'red';
         b.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
-        rad.innerHTML = 'Red⠀⠀⠀⠀⠀';
+        rad.innerHTML = 'Red';
         rad.style.color = 'red';
         red0.style.color = 'red';
         break;}
@@ -493,7 +497,7 @@ switch (color[2]){
         c.style.border = 'green';
         c.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
         c.style.transition = '2s';
-        blu.innerHTML = 'Green⠀⠀⠀';
+        blu.innerHTML = 'Green';
         blu.style.color = 'green';
         blu.style.transition = '2s';
         blue0.style.color = 'green';
@@ -502,7 +506,7 @@ switch (color[2]){
         c.style.background = 'yellow';
         c.style.border = 'yellow';
         c.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
-        blu.innerHTML = 'Yellow⠀⠀⠀';
+        blu.innerHTML = 'Yellow';
         blu.style.color = 'yellow';
         blue0.style.color = 'yellow';
         break;
@@ -510,7 +514,7 @@ switch (color[2]){
         c.style.background = 'red';
         c.style.border = 'red';
         c.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
-        blu.innerHTML = 'Red⠀⠀⠀⠀⠀';
+        blu.innerHTML = 'Red';
         blu.style.color = 'red';
         blue0.style.color = 'red';
         break;
@@ -518,7 +522,7 @@ switch (color[2]){
         c.style.background = 'blue';
         c.style.border = 'blue';
         c.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
-        blu.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+        blu.innerHTML = 'Blue';
         blu.style.color = 'blue';
         blue0.style.color = 'blue';
         break;}
@@ -534,7 +538,7 @@ switch(color[3]){
         d.style.border = 'yellow';
         d.style.boxShadow = '-1px -1px 0px rgb(50, 0, 0) inset';
         d.style.transition = '2s';
-        gre.innerHTML = 'Yellow⠀⠀⠀';
+        gre.innerHTML = 'Yellow';
         gre.style.color = 'yellow';
         gre.style.transition = '2s';
         green0.style.color = 'yellow';
@@ -544,7 +548,7 @@ switch(color[3]){
         d.style.background = 'red';
         d.style.border = 'red';
         d.style.boxShadow = '-1px -1px 0px rgb(0, 0, 50) inset';
-        gre.innerHTML = 'Red⠀⠀⠀⠀⠀';
+        gre.innerHTML = 'Red';
         gre.style.color = 'red';
         green0.style.color = 'red';
         break;
@@ -552,7 +556,7 @@ switch(color[3]){
         d.style.background = 'blue';
         d.style.border = 'blue';
         d.style.boxShadow = '-1px -1px 0px rgb(0, 50, 0) inset';
-        gre.innerHTML = 'Blue⠀⠀⠀⠀⠀';
+        gre.innerHTML = 'Blue';
         gre.style.color = 'blue';
         green0.style.color = 'blue';
         break;
@@ -560,7 +564,7 @@ switch(color[3]){
         d.style.background = 'green';
         d.style.border = 'green';
         d.style.boxShadow = '-1px -1px 0px rgb(50, 50, 0) inset';
-        gre.innerHTML = 'Green⠀⠀⠀';
+        gre.innerHTML = 'Green';
         gre.style.color = 'green';
         green0.style.color = 'green';
         break;}}}
