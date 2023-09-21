@@ -13,10 +13,10 @@
      width: 50px;
      height: 50px;
      position:relative;
-     left: 850px;
+     left: 900px;
      height:80px;
      width:80px;
-     top:35px;
+     top:25px;
      /*the postion of the image in upper right corner*/}
 .yellow{
      font:normal 25px arial;
@@ -31,37 +31,36 @@
  .red{font: normal 25px arial;
      color:red;
      position:relative;
-     left:4%;
+     left:8%;
      /*style of second word below the second colored button*/}
  .red0{font: normal 25px arial;
      color:red;
      position:relative;
-     left:110px;
+     left:12%;
      /*style of second number below of the second word*/}
  .blue{font: normal 25px arial;
       color: blue;
       position:relative;
-      left:10%;
+      left:17%;
       /*style of third word below the third colored button*/}
  .blue0{font: normal 25px arial;
       color: blue;
-      height: 1px;
       position:relative;
-      left:220px;
+      left:24%;
       /*style of third number below of the third word*/}
  .green{font: normal 25px arial;
       color:green;
       position:relative;
-      left:15%;
+      left:26%;
      /*style of fourth word below the fourth colored button*/}
  .green0{font: normal 25px arial;
       color:green;
       position:relative;
-      left:330px;
+      left:36%;
      /*style of fourth number below of fthe fourth word*/}
  .test{
-         width: 100px;
-         height: 100px;
+         width: 150px;
+         height: 150px;
          background:yellow;
          border-color: yellow;
          box-shadow:1px 1px 0px rgb(50, 50, 0);
@@ -70,8 +69,8 @@
          border-radius: 10%;
         /*style of first colored button*/}
  .test2{
-         width: 100px;
-         height: 100px;
+         width: 150px;
+         height: 150px;
          background:red;
          border-color: red;
          box-shadow:1px 1px 0px  rgb(50, 0, 0);
@@ -80,8 +79,8 @@
          border-radius: 20%;
          left:20px;
         /*style of second colored button*/}
- .test3{width: 100px;
-         height: 100px;
+ .test3{width: 150px;
+         height: 150px;
          background:blue;
          border-color: blue;
          box-shadow: inset 0,7px 0,7px 0px ;
@@ -91,8 +90,8 @@
          left:40px;
        /*style of third colored button*/}
  .test4{
-         width: 100px;
-         height: 100px;
+         width: 150px;
+         height: 150px;
          background:green;
          border-color: green;
          box-shadow: inset 0,7px 0,7px 0px ;
@@ -123,4 +122,48 @@
      font:normal 20px Arial;
      color:red;
      }
- 
+     @media only screen and (max-width: 768px){
+          #result{
+          width: 50px;
+          height: 50px;
+          }
+          #color-button{
+          width: 50px;
+          height:50px;
+          }
+          .imgs{
+               left:75%;
+               width:10%;
+               height:10%;
+               left:600px;
+               position:relative;
+          }
+          #number-color{
+          font-size: 15px;
+          }
+          #word-color{
+          font-size: 15px;
+          }
+          .red{
+          left:5%
+          }
+          .blue{
+          left:15%
+          }
+          .green{
+          left:24%
+          }
+     }
+     @media only screen and (max-width: 1280px) and (min-width:768px){
+     .imgs{
+          left:50%;}
+     .red{
+     left:12%
+     }
+     .blue{
+     left:23%
+     }
+     .green{
+     left:35%
+     }
+     }

@@ -20,12 +20,13 @@ const results4 = document.querySelector('.results4')
 const results5 = document.querySelector('.results5')
 const results6 = document.querySelector('.results6')
 const resulted = document.querySelector('.resulted')
-var color =[0,0,0,0,0,0,0,0,0];
-function yellow(){
-if(color[0] < 4)
-{ color[0]++} else
-{color[0]= color[0]-3}
-switch(color[0]){
+const resultid = document.querySelectorAll(".results1, .results2, .results3, .results4, .results5, .results6");
+var color =[0,0,0,0];
+var image = 0;
+var count =[0,0,0,0];
+function yellow(){count[0]++;
+color[0]++
+switch(count[0]){
 case 1 : 
     a.style.background = 'red';
     a.style.border = 'red';
@@ -64,15 +65,11 @@ case 4:
     yel.innerHTML = 'Yellow';
     yel.style.color = 'yellow';
     yellow0.style.color = 'yellow';
+    count[0]= count[0]-4
     break;
-    }
-color[4]++;
-yellow0.innerHTML = color[4];}
-function red(){ 
-if(color[1] < 4){
-    color[1]++;} else{
-    color[1]= color[1]-3}
-switch(color[1]){
+    }yellow0.innerHTML = color[0];}
+function red(){color[1]++;count[1]++
+switch(count[1]){
 case 1 :  
     b.style.background = 'blue';
     b.style.border = 'blue';
@@ -111,14 +108,11 @@ case 4 :
     rad.innerHTML = 'Red';
     rad.style.color = 'red';
     red0.style.color = 'red';
+    count[1]=count[1]-4
     break;}
-color[5]++;
-red0.innerHTML = color[5];}
-function blue(){
-if(color[2] < 4){
-    color[2]++;} else{
-    color[2]= color[2]-3}
-switch (color[2]){
+red0.innerHTML = color[1];}
+function blue(){color[2]++;count[2]++
+switch (count[2]){
 case 1: 
     c.style.background = 'green';
     c.style.border = 'green';
@@ -157,14 +151,11 @@ case 4:
     blu.innerHTML = 'Blue';
     blu.style.color = 'blue';
     blue0.style.color = 'blue';
+    count[2]=count[2]-4
     break;}
-color[6]++;
-blue0.innerHTML = color[6];}
-function green(){
-if(color[3] < 4){
-    color[3]++;} else{
-    color[3]= color[3]-3}
-switch(color[3]){
+blue0.innerHTML = color[2];}
+function green(){color[3]++;count[3]++
+switch(count[3]){
 case 1: 
     d.style.background = 'yellow';
     d.style.border = 'yellow';
@@ -203,53 +194,47 @@ case 4:
     gre.innerHTML = 'Green';
     gre.style.color = 'green';
     green0.style.color = 'green';
+    count[3] = count[3]- 4;
     break;}
-color[7]++;
-green0.innerHTML = color[7];}
+green0.innerHTML = color[3];}
+a.addEventListener("click",yellow)
+b.addEventListener("click",red)
+c.addEventListener("click",blue)
+d.addEventListener("click",green)
 function rest(){
-product.innerHTML= Number(color[4]+color[5]+color[6]+color[7])}
+product.innerHTML= Number(color[0]+color[1]+color[2]+color[3])}
 function rest2(){
-product.innerHTML= Number(-color[4]-color[5]-color[6]-color[7])}
+product.innerHTML= Number(-color[0]-color[1]-color[2]-color[3])}
 function rest3(){
-product.innerHTML= Number(color[4]*color[5]*color[6]*color[7])}
+product.innerHTML= Number(color[0]*color[1]*color[2]*color[3])}
 function rest4(){
-product.innerHTML= Number(color[4]/color[5]/color[6]/color[7])}
+product.innerHTML= Number(color[0]/color[1]/color[2]/color[3])}
 function rest5(){
-product.innerHTML = Number(color[4]%color[5]%color[6]%color[7])}
+product.innerHTML = Number(color[0]%color[1]%color[2]%color[3])}
 function rest6(){
-product.innerHTML = Number(color[4]**color[5]**color[6]**color[7])}
-function img() {if(color[8] == 0){
+product.innerHTML = Number(color[0]**color[1]**color[2]**color[3])}
+results1.addEventListener("click",rest);
+results2.addEventListener("click",rest2);
+results3.addEventListener("click",rest3);
+results4.addEventListener("click",rest4);
+results5.addEventListener("click",rest5);
+results6.addEventListener("click",rest6);
+imgs.addEventListener("click",img)
+function img() {if(image == 0){
 document.body.style.background = 'white';
 hps.style.color = 'black';
 hps.style.transition = '2s';
 imgs.setAttribute('src','https://i.pinimg.com/originals/c9/c1/cf/c9c1cf41920598394f613f1fc38a08ff.jpg')
-color[8]++
-    resulted.style.color='black'
-    results1.style.backgroundColor= 'white';
-    results1.style.color= "black";
-    results1.style.borderColor='black';
-    results1.style.transition='2s';
-    results2.style.backgroundColor= 'white';
-    results2.style.color= "black";
-    results2.style.borderColor='black';
-    results2.style.transition='2s';
-    results3.style.backgroundColor= 'white';
-    results3.style.color= "black";
-    results3.style.borderColor='black';
-    results3.style.transition='2s';
-    results4.style.backgroundColor= 'white';
-    results4.style.color= "black";
-    results4.style.borderColor='black';
-    results4.style.transition='2s';
-    results5.style.backgroundColor= 'white';
-    results5.style.color= "black";
-    results5.style.borderColor='black';
-    results5.style.transition='2s';
-    results6.style.backgroundColor= 'white';
-    results6.style.color= "black";
-    results6.style.borderColor='black';
-    results6.style.transition='2s';
-switch(color[0]){
+image++
+for (let i = 0; i < resultid.length; i++) {
+    resulted.style.color = "black";
+    resulted.style.transition ='2s';
+    resultid[i].style.backgroundColor = 'white';
+    resultid[i].style.color = 'black';
+    resultid[i].style.borderColor = 'black';
+    resultid[i].style.transition = '2s';
+}
+switch(count[0]){
 case 0:
     yel.style.color = 'orange';
     yellow0.style.color = 'orange';
@@ -281,7 +266,7 @@ case 4:
     a.style.border = 'orange';
     break;
 }
-switch(color[1]){
+switch(count[1]){
     case 0:
         rad.style.color = 'brown';
         red0.style.color = 'brown';
@@ -313,7 +298,7 @@ switch(color[1]){
         b.style.border = 'brown';
         break;
 }
-switch(color[2]){
+switch(count[2]){
     case 0:
         blu.style.color = 'purple';
         blue0.style.color = 'purple';
@@ -345,7 +330,7 @@ switch(color[2]){
         c.style.border = 'purple';
         break;
 }
-switch(color[3]){
+switch(count[3]){
     case 0:
         gre.style.color = 'salmon';
         green0.style.color = 'salmon';
@@ -376,32 +361,17 @@ switch(color[3]){
         d.style.background = 'salmon';
         d.style.border = 'salmon';
         break;
-}
-} else if(color[8] == 1){
+} }else if(image == 1){
 document.body.style.background = 'black';
 hps.style.color = 'rgb(219, 219, 219)';
 imgs.setAttribute('src','https://i.pinimg.com/originals/cc/65/09/cc6509211d4eea95619a31b1c290c417.jpg')
-color[8]-- 
-    resulted.style.color='white'
-    results1.style.backgroundColor= 'black';
-    results1.style.color= "white";
-    results1.style.borderColor='white';
-    results2.style.backgroundColor= 'black';
-    results2.style.color= "white";
-    results2.style.borderColor='white';
-    results3.style.backgroundColor= 'black';
-    results3.style.color= "white";
-    results3.style.borderColor='white';
-    results4.style.backgroundColor= 'black';
-    results4.style.color= "white";
-    results4.style.borderColor='white';
-    results5.style.backgroundColor= 'black';
-    results5.style.color= "white";
-    results5.style.borderColor='white';    
-    results6.style.backgroundColor= 'black';
-    results6.style.color= "white";
-    results6.style.borderColor='white';
-switch(color[0]){
+image-- 
+for (let i = 0; i < resultid.length; i++) {
+    resulted.style.color = "white";
+    resultid[i].style.backgroundColor= 'black';
+    resultid[i].style.color= "white";
+    resultid[i].style.borderColor = 'white';;}
+switch(count[0]){
     case 0: 
         yel.style.color = 'yellow';
         yellow0.style.color = 'yellow';
@@ -443,7 +413,7 @@ switch(color[0]){
         yel.style.color = 'yellow';
         yellow0.style.color = 'yellow';
         break;}
-switch(color[1]){
+switch(count[1]){
     case 0: 
         rad.style.color = 'red';
         red0.style.color = 'red';
@@ -485,7 +455,7 @@ switch(color[1]){
         rad.style.color = 'red';
         red0.style.color = 'red';
         break;}
-switch (color[2]){
+switch (count[2]){
     case 0: 
         blu.style.color = 'blue';
         blue0.style.color = 'blue';
@@ -526,7 +496,7 @@ switch (color[2]){
         blu.style.color = 'blue';
         blue0.style.color = 'blue';
         break;}
-switch(color[3]){
+switch(count[3]){
     case 0:
         gre.style.color = 'green';
         green0.style.color = 'green';
