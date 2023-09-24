@@ -7,84 +7,30 @@
      font:normal 30px Arial;
      position:relative;
      top:-20px;
-     /*the color of the word in upper left corner*/
+     /*the sentence in upper left corner*/
 }
 .imgs{
-     width: 50px;
-     height: 50px;
      position:relative;
      left: 900px;
      height:80px;
      width:80px;
      top:25px;
      /*the postion of the image in upper right corner*/}
-.yellow{
-     font:normal 25px arial;
-     color:yellow;
-     position:relative;
-     /*style of first word below the first colored button*/}
- .yellow0{
-     font: normal 25px arial;
-      color:yellow;
-      position:relative;
-     /*style of first number below of the first word*/}
- .red{font: normal 25px arial;
-     color:red;
-     position:relative;
-     left:8%;
-     /*style of second word below the second colored button*/}
- .red0{font: normal 25px arial;
-     color:red;
-     position:relative;
-     left:12%;
-     /*style of second number below of the second word*/}
- .blue{font: normal 25px arial;
-      color: blue;
-      position:relative;
-      left:17%;
-      /*style of third word below the third colored button*/}
- .blue0{font: normal 25px arial;
-      color: blue;
-      position:relative;
-      left:24%;
-      /*style of third number below of the third word*/}
- .green{font: normal 25px arial;
-      color:green;
-      position:relative;
-      left:26%;
-     /*style of fourth word below the fourth colored button*/}
- .green0{font: normal 25px arial;
-      color:green;
-      position:relative;
-      left:36%;
-     /*style of fourth number below of fthe fourth word*/}
  .test{
          width: 150px;
          height: 150px;
-         background:yellow;
-         border-color: yellow;
-         box-shadow:1px 1px 0px rgb(50, 50, 0);
-         transition: 3s;
          position:relative;
          border-radius: 10%;
         /*style of first colored button*/}
  .test2{
          width: 150px;
          height: 150px;
-         background:red;
-         border-color: red;
-         box-shadow:1px 1px 0px  rgb(50, 0, 0);
-         transition: 2s;
          position:relative;
          border-radius: 20%;
          left:20px;
         /*style of second colored button*/}
  .test3{width: 150px;
          height: 150px;
-         background:blue;
-         border-color: blue;
-         box-shadow: inset 0,7px 0,7px 0px ;
-         transition: 2s;
          position:relative;
          border-radius: 40%;
          left:40px;
@@ -92,10 +38,6 @@
  .test4{
          width: 150px;
          height: 150px;
-         background:green;
-         border-color: green;
-         box-shadow: inset 0,7px 0,7px 0px ;
-         transition: 2s;
          position:relative;
          border-radius: 80%;
          left:60px;
@@ -103,10 +45,6 @@
  #result{
       width: 150px;
       height: 150px;
-      background:black;
-      border-color:white;
-      box-shadow: inset 0,5;
-      color: white;
       position:relative;
       top:10px;
       border-radius:100px;
@@ -122,6 +60,26 @@
      font:normal 20px Arial;
      color:red;
      }
+     #sum{
+     width:30px;
+     height:30px;
+     position:relative;
+     }
+     #sum2{
+     width:30px;
+     height:30px;
+     position:relative;
+     left:8%; }
+     #sum3{
+          width:30px;
+          height:30px;
+          position:relative;
+          left:16%;}
+     #sum4{
+          width:30px;
+          height:30px;
+          position:relative;
+          left:24%;}
      @media only screen and (max-width: 768px){
           #result{
           width: 50px;
@@ -132,10 +90,9 @@
           height:50px;
           }
           .imgs{
-               left:75%;
-               width:10%;
-               height:10%;
-               left:600px;
+               left:15%;
+               width:30px;
+               height:30px;
                position:relative;
           }
           #number-color{
@@ -153,10 +110,14 @@
           .green{
           left:24%
           }
+          .h1c{
+          top:1px;
+          font-size: 20px;
+          }
      }
      @media only screen and (max-width: 1280px) and (min-width:768px){
      .imgs{
-          left:50%;}
+     left:40%;}
      .red{
      left:12%
      }
